@@ -1,8 +1,10 @@
+import Main from "@/components/Main/Main";
 
 
 export default function Home() {
   return (
-    <main style={{ height: '200px', background: 'green' }}>
+    <main>
+      <Main />
     </main>
   );
 }

@@ -1,0 +1,43 @@
+.panel {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+
+    ol {
+        :first-child {
+            margin-left: 5px;
+        }
+
+        :last-child {
+            margin-right: 5px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70vw;
+        min-height: 40px;
+
+        @media (max-width: 700px) {
+            width: 100vw;
+        }
+
+        @media (max-width: 500px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw;
+        }
+
+        li:hover,
+        li>a:focus {
+            text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+            color: #FFFFFF;
+            outline: none;
+        }
+    }
+}

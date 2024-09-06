@@ -1,10 +1,10 @@
 import { combineSlices, configureStore } from '@reduxjs/toolkit'
-import backgroundSlice from './backgroundSlice'
+import aptSlice from './aptSlice'
 
 
 export const makeStore = () => {
     return configureStore({
-        reducer: combineSlices(backgroundSlice)
+        reducer: combineSlices(aptSlice)
     })
 }
 

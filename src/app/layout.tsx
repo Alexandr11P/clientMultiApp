@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import "normalize.css"
 import AppQueryClientProvider from "@/components/AppQueryClientProvider";
 import StoreProvider from "@/components/StoreProvider";
-const inter = Inter({ subsets: ["latin"] });
+import Body from "@/components/Body/Body";
+
 
 export const metadata: Metadata = {
   title: "Multi PET APP",
@@ -16,7 +16,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="ru">
       <StoreProvider>
         <AppQueryClientProvider>
-          <body className={inter.className}>{children}</body>
+          <Body>{children}</Body>
         </AppQueryClientProvider>
       </StoreProvider>
     </html>

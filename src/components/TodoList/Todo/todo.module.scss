@@ -1,0 +1,15 @@
+.main {
+    :not(.main:first-child) {
+        margin-left: 5px;
+    }
+
+    margin-top: 10px;
+    border: 1px dashed white;
+    padding: 5px;
+
+    input {
+        &:checked {
+            pointer-events: none;
+        }
+    }
+}

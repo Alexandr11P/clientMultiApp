@@ -1,0 +1,95 @@
+.apt {
+    width: 500px;
+    border-radius: 10px;
+    height: 250px;
+    margin-top: 20px;
+    background-size: cover;
+    animation: 2s ease-in-out forwards showapt;
+
+    :nth-child(n) {
+        padding: 5px;
+    }
+
+    @media(max-width: 450px) {
+        font-size: small;
+    }
+
+    @media(max-width: 350px) {
+        font-size: 12px;
+    }
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    align-items: end;
+
+    .price {
+        background-color: rgba(0, 128, 0, 0.4);
+    }
+
+    .galleryI {
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .galleryI:hover {
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+    }
+}
+
+.header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    .etag {
+        background-color: rgba(255, 255, 0, 0.4);
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .call {
+        background: url(../images/Phone.png) no-repeat center;
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .call:hover {
+        filter: hue-rotate(90deg);
+        -webkit-filter: hue-rotate(90deg);
+    }
+}
+
+@keyframes showapt {
+    0% {
+        transform: translateX(-100vw) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateX(-100vw) rotate(-10deg);
+    }
+
+    85% {
+        transform: rotate(-10deg);
+    }
+
+    100% {}
+}

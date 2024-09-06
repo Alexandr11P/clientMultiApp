@@ -1,0 +1,21 @@
+.button {
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 0.2s;
+
+}
+
+.button:hover {
+    filter: brightness(125%);
+    -moz-filter: brightness(125%);
+    -webkit-filter: brightness(125%);
+}
+
+.button:disabled {
+    background-color: gray;
+    filter: none;
+    -moz-filter: none;
+    -webkit-filter: none;
+}
