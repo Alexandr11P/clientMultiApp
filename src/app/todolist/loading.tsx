@@ -1,10 +1,10 @@
 import Spinner from '@/components/UI/Loaders/Spinner/Spinner'
 import React from 'react'
 
-function TodoLoading() {
+function Loading() {
     return (
         <Spinner />
     )
 }
 
-export default TodoLoading
+export default Loading
