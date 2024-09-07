@@ -5,9 +5,14 @@
     justify-content: center;
     height: calc(100vh - 50px);
 
-    * {
+    input,
+    button {
         margin-bottom: 5px;
         width: 30vw;
+
+        @media (max-width: 800px) {
+            width: 260px;
+        }
     }
 
     p {
@@ -17,6 +22,10 @@
     .link {
         color: gold;
         text-shadow: 1px 1px 2px grey, 0 0 1em white, 0 0 0.2em white
+    }
+
+    @media(max-width:360px) {
+        font-size: 14px;
     }
 }
 
